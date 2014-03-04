@@ -56,6 +56,12 @@
 
 					<aside class="notes">
 						NoSQL is a non-relational DB that allows for horizontal scaling. Distributed system, must understand CAP therom.
+
+						Used at Google, Facebook, Mozillia
+
+						Big Data Applications
+
+						Horizontal Scale - Add Nodes
 					</aside>
 				</section>
 
@@ -72,6 +78,15 @@
 				<section>
 					<h2>CAP Theorem</h2>
 					<img src="imgs/CAP_Theorem.png">
+					<aside class="notes">
+					Consistency - This means that the data in the database remains consistent after the execution of an operation. For example after an update operation all clients see the same data.
+
+					Availability - This means that the system is always on (service guarantee availability), no downtime.
+
+					Partition Tolerance - This means that the system continues to function even the communication among the servers is unreliable, i.e. the servers may be partitioned into multiple groups that cannot communicate with one another.
+
+					You can only have 2!
+					</aside>
 				</section>
 
 				<section>
@@ -81,6 +96,16 @@
 						<h2 class="fragment"><u>S</u>oft state</h2>
 						<h2 class="fragment"><u>E</u>ventual consistency</h2>
 					</ul>
+
+					<aside class="notes">
+					A BASE system gives up on consistency.
+
+					Basically Available indicates that the system does guarantee availability, in terms of the CAP theorem.
+
+					Soft state indicates that the state of the system may change over time, even without input. This is because of the eventual consistency model
+
+					Eventual consistency indicates that the system will become consistent over time, given that the system doesn't receive input during that time.
+					</aside>
 				</section>
 
 				<section>
